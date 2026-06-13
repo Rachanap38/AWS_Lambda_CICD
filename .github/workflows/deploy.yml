@@ -70,7 +70,7 @@ jobs:
           aws lambda create-function \
             --function-name $FUNCTION_NAME \
             --runtime python3.11 \
-            --role arn:aws:iam::035281989085:role/service-role/test_lambda_dev \
+            --role arn:aws:iam::035281989085:role/test_lamda_dev \
             --handler app.lambda_handler \
             --timeout 300 \
             --zip-file fileb://lambda.zip \
